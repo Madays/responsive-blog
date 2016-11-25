@@ -5,28 +5,109 @@
 }
 body{
     font-family: "Open Sans", sans-serif;
+    background: #2D2636;
 }
-header{
-    width: 100%;
-    height: 450px;
-    background: #333;
-    color: #fff;
-    font-family: 'Courgette', sans-serif;
-}
-#menu-bar{
-    display: none;
-}
-/* Responsive */
-.logo{
-    float: left;
-}
-.menu{
-    float: right;
-}
-@media screen and (max-width : 920px) {
-
+.container{
+    width: 90%;
+    margin: auto;
 }
 
 @media screen and (max-width: 600px) {
-
+    /*---------------header*/
+    header{
+        width: 100%;
+        height: 150px;
+        background: #333;
+        color: #fff;
+        font-family: 'Courgette', sans-serif;
+    }
+    header .container{
+        display: table;
+    }
+    header img{
+        width: 350px;
+    }
+    header label{
+        font-size: 28px;
+        margin: 50px 0;
+        cursor: pointer;
+    }
+    #menu-bar{
+        display: none;
+    }
+    /* Responsive */
+    .logo{
+        float: left;
+    }
+    .menu{
+        float: right;    
+    }
+    .menu nav{
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(51,51,51,.9);
+        transition: all .5s;
+        transform: translateX(-100%);
+    }
+    .menu a{
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 15px;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+    }
+    .menu a:hover{
+        background: rgba(255,255,255,.3);
+    }
+    #menu-bar:checked ~ nav{
+        transform: translateX(0%);
+    }
+/*------------END---header*/    
+/*---------------BANNER*/
+    section.banner{
+        position: relative;
+    }
+    section.banner img{
+        width: 100%;
+        height: 400px;
+    }
+    section.banner .text-banner{
+        position: absolute;
+        background: #1C1722;
+        text-align: center;
+        padding: 30px;
+        top: 10%;
+        margin: 0 10%;
+    }
+    section.banner h4{
+        font-size: 80px; 
+        color: #F8B96A;
+    }
+    section.banner p{
+        color:#fff;
+    }
+/*------------END---BANNER*/
+/*---------------hero*/
+    section.hero .text-hero{
+        text-align: center;   
+    }
+    section.hero img{
+        width: 100%;
+    }
+    section.hero h4{
+        font-size: 20px; 
+        color: #F8B96A;
+    }
+    section.hero p{
+        color:#fff;
+    }
+/*------------END---hero*/
+}
+@media screen and (max-width : 920px) {
+    /*---------------header*/
+    
+    /*------------END---header*/    
 }
