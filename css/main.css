@@ -1,7 +1,28 @@
-/* Inserta tu codigo aqui */
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+}
+header{
+    width: 100%;
+    height: 450px;
+    background: #333;
+    color: #fff;
+    font-family: 'Courgette', sans-serif;
+}
+#menu-bar{
+    display: none;
+}
 /* Responsive */
-
+.logo{
+    float: left;
+}
+.menu{
+    float: right;
+}
 @media screen and (max-width : 920px) {
 
 }
